@@ -1,11 +1,32 @@
 ---
-label: default
+label: post
 hide_body: false
+display_field: title
 fields:
 - name: layout
   label: Layout
   type: text
   hidden: false
-  default: default
+  default: post
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: description
+  type: text
+  config:
+    required: false
+  label: description
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: image
 pages:
-- _posts/new-draft.md
+- _posts/2021-08-31-lea-tortay-eleventy-fan.md
+- _posts/2021-08-31-new-draft.md
